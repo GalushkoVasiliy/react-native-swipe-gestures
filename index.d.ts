@@ -6,6 +6,7 @@ declare module 'react-native-swipe-gestures' {
   } from 'react-native';
 
   export interface GestureRecognizerProps extends ViewProps {
+    swipeEnabled?: boolean;
     config?: GestureRecognizerConfig;
     onSwipe?(gestureName: string, gestureState: PanResponderGestureState): void;
     onSwipeUp?(gestureState: PanResponderGestureState): void;
